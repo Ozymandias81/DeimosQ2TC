@@ -1,0 +1,16 @@
+- Add Category/Title/Colors for all new actors/replacements of this mod for better finding on GZDB
+- Add blood and blood effects
+- Add proper BFG10k ball behavior as seen on Q2
+- Create a TESTMAP with all actors for playtesting
+- Externalize DoomEdNums and SpawnIDs inside MAPINFO
+- Externalize Objectives as a separate script in a library
+- Fix black boxes, should be destroyable
+- Fix corpses, they should be gibbable
+- Fix fullscreen HUD, keys are hidden on their right side
+- Fix rocket launcher animations
+- I have kept all fonts files, but idk which one is needed
+- Include 3d strogg banners and some other 3d props useful
+- Models/items/screen is unused, only tris.md2 is used but for different scope, also the file skin.png was a non-compatible .pcx file
+- Reformat whole code structure and polish it
+- Some damage must be nerfed (rockets and grenades mainly, from enemies and friendly)
+- Use LANGUAGE entries for map names, messages etc etc

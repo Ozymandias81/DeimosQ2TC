@@ -1,0 +1,583 @@
+ACTOR DeadMarine1
+{
+  States
+  {
+  Spawn:
+    PLAY N -1
+    Stop
+  }
+}
+
+ACTOR DeadMarine2
+{
+  States
+  {
+  Spawn:
+    PLAY N -1
+    Stop
+  }
+}
+
+ACTOR DeadMarine3
+{
+  States
+  {
+  Spawn:
+    PLAY N -1
+    Stop
+  }
+}
+
+ACTOR DeadMarine4
+{
+  States
+  {
+  Spawn:
+    PLAY N -1
+    Stop
+  }
+}
+
+ACTOR DeadMarine5
+{
+  States
+  {
+  Spawn:
+    PLAY N -1
+    Stop
+  }
+}
+
+ACTOR DeadMarine6
+{
+  States
+  {
+  Spawn:
+    PLAY N -1
+    Stop
+  }
+}
+Actor DeadMarineSpawner : RandomSpawner Replaces DeadMarine
+{
+	DropItem "DeadMarine1"
+	DropItem "DeadMarine2"
+	DropItem "DeadMarine3"
+	DropItem "DeadMarine4"
+}
+
+ACTOR DeadGuard1
+{
+  States
+  {
+  Spawn:
+    GRD5 N -1
+    Stop
+  }
+}
+
+ACTOR DeadGuard2
+{
+  States
+  {
+  Spawn:
+    GRD5 N -1
+    Stop
+  }
+}
+
+ACTOR DeadGuard3
+{
+  States
+  {
+  Spawn:
+    GRD5 N -1
+    Stop
+  }
+}
+
+ACTOR DeadGuard4
+{
+  States
+  {
+  Spawn:
+    GRD5 N -1
+    Stop
+  }
+}
+
+ACTOR DeadGuard5
+{
+  States
+  {
+  Spawn:
+    GRD5 N -1
+    Stop
+  }
+}
+
+ACTOR DeadGuard6
+{
+  States
+  {
+  Spawn:
+    GRD5 N -1
+    Stop
+  }
+}
+
+ACTOR DeadShotgunGuard1
+{
+  States
+  {
+  Spawn:
+    GRD5 N -1
+    Stop
+  }
+}
+
+ACTOR DeadShotgunGuard2
+{
+  States
+  {
+  Spawn:
+    GRD5 N -1
+    Stop
+  }
+}
+
+ACTOR DeadShotgunGuard3
+{
+  States
+  {
+  Spawn:
+    GRD5 N -1
+    Stop
+  }
+}
+
+ACTOR DeadShotgunGuard4
+{
+  States
+  {
+  Spawn:
+    GRD5 N -1
+    Stop
+  }
+}
+
+ACTOR DeadShotgunGuard5
+{
+  States
+  {
+  Spawn:
+    GRD5 N -1
+    Stop
+  }
+}
+
+ACTOR DeadShotgunGuard6
+{
+  States
+  {
+  Spawn:
+    GRD5 N -1
+    Stop
+  }
+}
+
+ACTOR DeadEnhancedGuard1
+{
+  States
+  {
+  Spawn:
+    GRD5 N -1
+    Stop
+  }
+}
+
+ACTOR DeadEnhancedGuard2
+{
+  States
+  {
+  Spawn:
+    GRD5 N -1
+    Stop
+  }
+}
+
+ACTOR DeadEnhancedGuard3
+{
+  States
+  {
+  Spawn:
+    GRD5 N -1
+    Stop
+  }
+}
+
+ACTOR DeadEnhancedGuard4
+{
+  States
+  {
+  Spawn:
+    GRD5 N -1
+    Stop
+  }
+}
+
+ACTOR DeadEnhancedGuard5
+{
+  States
+  {
+  Spawn:
+    GRD5 N -1
+    Stop
+  }
+}
+
+ACTOR DeadEnhancedGuard6
+{
+  States
+  {
+  Spawn:
+    GRD5 N -1
+    Stop
+  }
+}
+
+Actor DeadGuardSpawner : RandomSpawner Replaces DeadZombieman
+{
+	DropItem "DeadGuard1"
+	DropItem "DeadGuard2"
+	DropItem "DeadGuard3"
+	DropItem "DeadGuard4"
+	DropItem "DeadGuard5"
+	DropItem "DeadGuard6"
+}
+
+Actor DeadShotgunGuardSpawner : RandomSpawner Replaces DeadShotgunguy
+{
+	DropItem "DeadShotgunGuard1"
+	DropItem "DeadShotgunGuard2"
+	DropItem "DeadShotgunGuard3"
+	DropItem "DeadShotgunGuard4"
+	DropItem "DeadShotgunGuard5"
+	DropItem "DeadShotgunGuard6"
+}
+
+Actor DeadEnhancedGuardSpawner : RandomSpawner Replaces DeadDoomimp
+{
+	DropItem "DeadEnhancedGuard1"
+	DropItem "DeadEnhancedGuard2"
+	DropItem "DeadEnhancedGuard3"
+	DropItem "DeadEnhancedGuard4"
+	DropItem "DeadEnhancedGuard5"
+	DropItem "DeadEnhancedGuard6"
+}
+
+//OLD BARREL CODE
+/*Actor Q2ExplosiveBarrel : ExplosiveBarrel Replaces ExplosiveBarrel
+{
+	DeathSound "Weapons/RocketExplosion"
+	States
+	{
+	Spawn:
+		BAR1 A -1
+		Stop
+	Death:
+		BAR1 A 3 Bright
+		TNT1 A 0 A_JumpIf(ACS_NamedExecuteWithResult("GetCvarInfo",2)==True,"Explode")
+		BAR1 A 12 Bright A_JumpIf(ACS_NamedExecuteWithResult("GetCvarInfo",1)==True,1)
+		Goto Explode
+		BAR1 A 2 Bright
+		BAR1 AAAAAA 1 Bright A_SetScale(ScaleX-0.03,ScaleY+0.066)
+		BAR1 AAAAAA 1 Bright A_SetScale(ScaleX*1.25,ScaleY-0.09)
+	Explode:
+		TNT1 A 0 A_Scream
+		TNT1 A 0 A_SpawnItem(Q2Explosion,0,22)
+		TNT1 A 0 A_Explode
+		TNT1 A 1050 BRIGHT A_BarrelDestroy
+		TNT1 A 5 A_Respawn
+		Wait
+	}
+}*/
+
+//NEW BARREL CODE FROM Blade of Agony - ozymandias81
+ACTOR Q2ExplosiveBarrel : ExplosiveBarrel Replaces ExplosiveBarrel
+{
+	+CANPASS
+	+MOVEWITHSECTOR	//I add this because we may need it for some "arcade" sequences -ozy
+	+NOTAUTOAIMED
+	+PUSHABLE
+	+SLIDESONWALLS	//let's prevent some weird behaviors, like being stuck in a map because the crate can't get out from an angle -ozy
+	Radius 24
+	Height 40
+	Mass 15000
+	DeathSound "Weapons/RocketExplosion"
+	States
+	{
+	Spawn:
+		BAR1 A 1
+		Goto Look
+	Look:
+		BAR1 A 8 A_LookEx(LOF_NOSOUNDCHECK, 0, 64, 0, 360)
+		Loop
+	See:
+		BAR1 A 0 A_JumpIf((velx != 0 || vely != 0), "Moving")
+		Goto Spawn
+	Moving:
+		BAR1 A 35 A_PlaySound("drum_moving", CHAN_AUTO, 0.65)
+		Goto Spawn
+	Death:
+		BAR1 A 3 Bright
+		TNT1 A 0 A_JumpIf(ACS_NamedExecuteWithResult("GetCvarInfo",2)==True,"Explode")
+		BAR1 A 12 Bright A_JumpIf(ACS_NamedExecuteWithResult("GetCvarInfo",1)==True,1)
+		Goto Explode
+		BAR1 A 2 Bright
+		BAR1 AAAAAA 1 Bright A_SetScale(ScaleX-0.03,ScaleY+0.066)
+		BAR1 AAAAAA 1 Bright A_SetScale(ScaleX*1.25,ScaleY-0.09)
+	Explode:
+		TNT1 A 0 A_Scream
+		TNT1 A 0 A_SpawnItem(Q2Explosion,0,22)
+		TNT1 A 0 A_Explode
+		TNT1 A 1050 BRIGHT A_BarrelDestroy
+		TNT1 A 5 A_Respawn
+		Wait
+	}
+}
+
+ACTOR ViperShip 15010
+{
+	SpawnID 950
+    Radius 8
+    Height 6
+    Speed 6
+    Damage 3 
+    SeeSound "viper/flyby"
+    PROJECTILE
+    -ACTIVATEIMPACT 
+    +ACTIVATEPCROSS 
+    +CLIENTSIDEONLY
+    +DONTSPLASH
+    +NOGRAVITY
+    States
+    {
+    Spawn:
+        MDLA A 1
+        MDLA A 0 A_SpawnItemEx("DecorationShip_Steam", -32, -5, -1, 0, 0, 0, 0, 128, 0)
+        MDLA A 0 A_SpawnItemEx("DecorationShip_Steam", -32, 5, -1, 0, 0, 0, 0, 128, 0)
+        Loop
+    Death:
+        MDLA A 4
+        Stop
+    }
+}
+
+ACTOR DecorationShip_Steam
+{
+	Radius 1
+	Height 1
+	RenderStyle "Add"
+	Alpha 0.2
+	Scale 0.2
+	+CLIENTSIDEONLY
+	+FORCEXYBILLBOARD
+	+MISSILE
+	+NOBLOCKMAP
+	+NOGRAVITY
+	States
+	{
+	Spawn:
+		SSST A 0
+		"####" AAAA 1 BRIGHT A_FadeIn(0.2)
+		"####" A 1 BRIGHT A_FadeOut
+		Wait
+	}
+}
+
+ACTOR StroggShip : ViperShip 15012
+{
+	SpawnID 951
+    States
+    {
+    Spawn:
+        MDLA A 1
+        MDLA A 0 A_SpawnItemEx("DecorationShip_Steam", -32, -5, -1, 0, 0, 0, 0, 128, 0)
+        MDLA A 0 A_SpawnItemEx("DecorationShip_Steam", -32, 5, -1, 0, 0, 0, 0, 128, 0)
+        Loop
+    Death:
+        MDLA A 4
+        Stop
+    }
+}
+
+ACTOR ComRadar : SwitchableDecoration 15013
+{
+    Radius 32
+    Height 64
+	+NOGRAVITY
+	+SOLID
+	+USESPECIAL
+    States
+    {
+	Inactive:
+    Spawn:
+		MDLA A -1
+		Stop
+	Active:
+		MDLA BCDEFGHIJKLMNOPQRSTUVWXYZ 12
+		MDLB ABCDEFGHIJKL 7
+		MDLB M -1
+		Stop
+    }
+}
+
+ACTOR Xcrate01 15000
+{
+    Radius 31
+    Height 64
+	+SOLID
+    States
+    {
+    Spawn:
+	POSS A 3
+	Loop
+    }
+}
+
+ACTOR Xcrate02 15001
+{
+    Radius 31
+    Height 64
+	+SOLID
+    States
+    {
+    Spawn:
+	POSS A 3
+	Loop
+    }
+}
+
+ACTOR Xcrate03 15002
+{
+    Radius 31
+    Height 64
+	+SOLID
+    States
+    {
+    Spawn:
+	POSS A 3
+	Loop
+    }
+}
+
+ACTOR Xcrate04 15003
+{
+    Radius 31
+    Height 64
+	+SOLID
+    States
+    {
+    Spawn:
+	POSS A 3
+	Loop
+    }
+}
+
+ACTOR Ncrate01 15004
+{
+    Radius 31
+    Height 64
+	+SOLID
+	+NOGRAVITY
+    States
+    {
+    Spawn:
+	POSS A 3
+	Loop
+    }
+}
+
+ACTOR Ncrate02 15005
+{
+    Radius 31
+    Height 64
+	+SOLID
+	+NOGRAVITY
+    States
+    {
+    Spawn:
+	POSS A 3
+	Loop
+    }
+}
+
+ACTOR Ncrate03 15006
+{
+    Radius 31
+    Height 64
+	+SOLID
+	+NOGRAVITY
+    States
+    {
+    Spawn:
+	POSS A 3
+	Loop
+    }
+}
+
+ACTOR Ncrate04 15007
+{
+    Radius 31
+    Height 64
+	+SOLID
+	+NOGRAVITY
+    States
+    {
+    Spawn:
+	POSS A 3
+	Loop
+    }
+}
+
+ACTOR Ncrate05 15008
+{
+    Radius 31
+    Height 64
+	+SOLID
+	+NOGRAVITY
+    States
+    {
+    Spawn:
+	POSS A 3
+	Loop
+    }
+}
+
+ACTOR Minicrate01 15009
+{
+    Radius 16
+    Height 32
+	+SOLID
+	+NOGRAVITY
+    States
+    {
+    Spawn:
+	POSS A 3
+	Loop
+    }
+}
+
+ACTOR 3DFan 15011
+{
+    Radius 0.1
+    Height 0.1
+	+SOLID
+	+NOGRAVITY
+    States
+    {
+    Spawn:
+	POSS A 3
+	Loop
+    }
+}

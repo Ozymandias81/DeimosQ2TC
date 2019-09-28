@@ -1,0 +1,36 @@
+// Quake 2 Status Bar by TheCamaleonMaligno
+Base Doom;
+Height 0;
+Resolution 420, 310;
+StatusBar Normal, ForceScaled
+{
+	InInventory HUDHPDown
+	DrawImage "field_3", 3, 273;
+	
+	DrawImage "i_health", 50, 273;
+	InInventory HUDLowHP
+	DrawNumber 3, QBIGFNTR, Untranslated, Health, DrawShadow, Alignment(Right), 50, 273;
+	Else
+	DrawNumber 3, QBIGFNT, Untranslated, Health, DrawShadow, Alignment(Right), 50, 273;
+	
+	DrawImage WeaponIcon, 155, 273;
+	DrawNumber 3, QBIGFNT, Untranslated, Ammo1, DrawShadow, Alignment(Center), 205, 273;
+	DrawImage AmmoIcon1, 230, 273;
+	Alpha 0.5
+	DrawNumber 3, QBIGFNT, Untranslated, Ammo2, DrawShadow, Alignment(Center), 205, 248;
+	Alpha 0.5
+	DrawImage AmmoIcon2, 230, 248;
+	
+	
+	InInventory HUDArmorDown
+	DrawImage "field_3", 278, 273;
+	DrawImage ArmorIcon, 325, 273;
+	DrawNumber 3, QBIGFNT, Untranslated, armor, DrawShadow, Alignment(Right), WhenNotZero, 325, 273;
+	
+	drawkeybar 100, vertical, reverserows, auto, 395, 2, 0, 3, auto;
+	DrawSelectedInventory INDEXFON, 360, 273, 383, 290;
+}
+StatusBar Inventory
+{
+	drawinventorybar Doom, Vertical, Translucent, 7, INDEXFONT, 395, 123, 418, 140; // 23 17
+}

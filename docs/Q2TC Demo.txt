@@ -1,0 +1,84 @@
+===========================================================================
+Advanced engine needed  : GZDoom
+Primary purpose         : Single
+===========================================================================
+Title                   : Quake 2 Project: Great Zigurath Destruction
+Filename                : Q2TCDemo.pk3
+Release date            : 26/09/2019
+Author                  : Oriol Comerma (Deimos Anomaly on ZDoom Forums)
+Other Files By Author   : "Aliens: Colonial Marines TC", E1M1 Remake: Doom 3 style (map), and something else...
+Misc. Author Info       :  @corrosive88 on Instagram
+
+Description             : “Quake 2 TC” Is a TC for Doom 2 that runs solely on GZDoom. 
+
+			  It uses all the original textures from Quake 2 on their original
+			  rendition as well as most of the ambient sounds of the game.
+			  The TC runs with the outstanding “Quake 2 Stuff” mod that brings
+			  all the weapons and enemies straight from the game into GZDoom with total accuracy.
+
+			  The music comes from the Quake 2 port of Nintendo 64, composed by Aubrey Hodges.
+
+			  My aim is to create a near perfect recreation of a ID Tech 2/Quake 2
+			  level or expansion pack but with the Doom engine, enhanced and made possible
+			  only with GZDoom. Despite a few structural features and effects that are only
+			  possible on the Quake 2 engine, the results are near identical and that proves again
+			  how an ancient engine like Doom is capable to reach a similar level of technical
+			  capabilities with ease.
+
+Plot                    : After the successful "Operation Alien Overlord",
+			  the USCM runs a global invasion of the planet Stroggos,
+			  the core and heart of the Strogg populated solar system.
+			  But while the Human forces are concentrated on Stroggos,
+			  the remaining Stroggs on the other planets regroup and
+			  start a new empire led by Zigurath, a new and more powerful Makron.
+
+			  Desperate to launch a counter assault to the newly formed Strogg forces,
+			  the marines launch a planetary wide scale assault to the rest of the
+			  Strogg system in order to crush the new threat.
+
+			  Gunned down by the bunkers located on the outskirts of a remote planet
+			  that serves as an outer stronghold, you must now travel through the
+			  various Strogg planets and Warships that are between you
+			  and the new Makron and destroy him.
+
+
+Additional Credits to   : Ozymandias81 for playtesting, tech help, resource building and tweaks.
+			  TheCameleonMaligno and theundeadsoldier for Quake II Stuff.
+			  Aubrey Hodges for the Quake 2 N64 OST.
+
+Additional Thanks to	: Tormentor667 for his repository.
+			  iD Software for Quake II.
+			  Fear Factory, Linkin Park and Rammstein for all the inspiration while doing this.
+
+===========================================================================
+* What is included *
+
+New levels              : 4 (as of first Unit demo)
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes
+Decorate                : Yes
+Demos                   : No
+Other                   : Yes
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : U1M1 -> U1M4
+Single Player           : Designed for
+Cooperative 2-4 Player  : No (planed for full release)
+Deathmatch 2-4 Player   : No
+Other game styles       : No
+Difficulty Settings     : No (planed for full release)
+
+
+* Construction *
+
+Base                    : From scratch
+Build Time              : 2 years on and off
+Editor(s) used          : GZDoomBuilder, SLADE3
+Known Bugs              : None
+May Not Run With        : Non ZDoom compatible source ports
+Tested With             : Only GZDoom

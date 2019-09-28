@@ -1,0 +1,146 @@
+///////////////////////////////////////
+// LASER BEAMS for FORCEFIELDS ////////
+// for REALM667                ////////
+// by Tormentor667             ////////
+// optimized by Blue Shadow    ////////
+///////////////////////////////////////
+
+const int SXF_LASERBEAM = SXF_TRANSFERTRANSLATION | SXF_SETMASTER | SXF_CLIENTSIDE;
+
+Actor LB_RemoveLaserParticles : CustomInventory
+{
+    States
+    {
+    Pickup:
+        TNT1 A 0 A_RemoveChildren(TRUE, RMVF_EVERYTHING) // For the particles.
+        TNT1 A 0 A_Remove(AAPTR_DEFAULT, RMVF_EVERYTHING) // For the spawners.
+        Stop
+    }
+}
+
+// Horizontal laser beam --------------------------------------------------------------------------
+
+Actor BaseLaserHorizontal
+{
+    RenderStyle "Add"
+    YScale 0.2
+    XScale 0.6
+
+    +FORCEXYBILLBOARD
+    +NOINTERACTION
+
+    States
+    {
+    Spawn:
+        LBFX A -1 Bright
+        Stop
+    }
+}
+
+Actor BaseLaserHorizontalSpawner
+{
+    Radius 2
+    Height 2
+
+    +NOGRAVITY
+
+    States
+    {
+    Spawn:
+        TNT1 A 1 NoDelay A_SpawnItemEx("BaseLaserHorizontal", 0, 0, 0, 0, 0, 0, 0, SXF_LASERBEAM)
+        TNT1 A 0 A_JumpIf(velx == 0 && vely == 0 && velz == 0, "StopSpawning")
+        Loop
+
+    StopSpawning:
+        TNT1 A -1 A_ChangeFlag("NOINTERACTION", TRUE)
+        Stop
+    }
+}
+
+Actor LaserBeam_Green_Horizontal : SwitchableDecoration 291
+{
+    +CLIENTSIDEONLY
+    +NOINTERACTION
+
+    States
+    {
+    Spawn:
+    Active:
+        TNT1 A -1 NoDelay A_SpawnItemEx("BaseLaserHorizontalSpawner", 0, 0, 0, 4, 0, 0, 0, SXF_LASERBEAM)
+        Stop
+
+    Inactive:
+        TNT1 A -1 A_GiveToChildren("LB_RemoveLaserParticles")
+        Stop
+    }
+}
+
+Actor LaserBeam_Blue_Horizontal : LaserBeam_Green_Horizontal 292
+{
+    Translation "112:127=196:207"
+}
+
+Actor LaserBeam_White_Horizontal : LaserBeam_Green_Horizontal 293
+{
+    Translation "112:127=80:111"
+}
+
+Actor LaserBeam_Red_Horizontal : LaserBeam_Green_Horizontal 294
+{
+    Translation "112:127=176:191"
+}
+
+Actor LaserBeam_Orange_Horizontal : LaserBeam_Green_Horizontal 295
+{
+    Translation "112:127=214:223"
+}
+
+// Vertical laser beam ----------------------------------------------------------------------------
+
+Actor BaseLaserVertical : BaseLaserHorizontal
+{
+    YScale 0.6
+    XScale 0.2
+}
+
+Actor BaseLaserVerticalSpawner : BaseLaserHorizontalSpawner
+{
+    States
+    {
+    Spawn:
+        TNT1 A 1 NoDelay A_SpawnItemEx("BaseLaserVertical", 0, 0, 0, 0, 0, 0, 0, SXF_LASERBEAM)
+        TNT1 A 0 A_JumpIf(velx == 0 && vely == 0 && velz == 0, "StopSpawning")
+        Loop
+    }
+}
+
+Actor LaserBeam_Green_Vertical : LaserBeam_Green_Horizontal 281
+{
+    States
+    {
+    Spawn:
+    Active:
+        TNT1 A -1 NoDelay A_SpawnItemEx("BaseLaserVerticalSpawner", 0, 0, 0, 0, 0, 4, 0, SXF_LASERBEAM)
+        Stop
+    }
+}
+
+Actor LaserBeam_Blue_Vertical : LaserBeam_Green_Vertical 282
+{
+    Translation "112:127=196:207"
+}
+
+Actor LaserBeam_White_Vertical : LaserBeam_Green_Vertical 283
+{
+    Translation "112:127=80:111"
+}
+
+Actor LaserBeam_Red_Vertical : LaserBeam_Green_Vertical 284
+{
+    Translation "112:127=176:191"
+}
+
+Actor LaserBeam_Orange_Vertical : LaserBeam_Green_Vertical 285
+{
+    Translation "112:127=214:223"
+}

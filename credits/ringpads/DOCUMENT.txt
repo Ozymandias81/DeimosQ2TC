@@ -1,0 +1,13 @@
+Place on map and use the second and third arguments to control the intensity and area of the 
+spawner.
+
+First argument controls nothing yet
+
+Second argument controls the size of the area. 32, for example, spawns in a 64x64 diameter circle.
+
+Third argument controls the speed of the rings (can also be negative if you want them to
+move downwards instead of upwards)
+
+It should be noted that pngs can't be translated like normal graphics. Because of this, if
+you convert the SPFXA0 sprite to a png, the spawners will spawn white effects. Use Doom's
+lmp format, instead.

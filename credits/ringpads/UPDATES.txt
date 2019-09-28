@@ -1,0 +1,5 @@
+01/22/2017 - MagicWazard:
+- Corrected instructions in DOCUMENT regarding effects of 2nd and 3rd args (they were switched around previously).
+- Added orb spawn at 300 degrees, and removed redundant spawn at 360 degrees (the same location as 0 degrees).
+- Converted A_SpawnItemEx flags to use constants instead of numbers. 
+- Added INFO and CREDITS lumps.

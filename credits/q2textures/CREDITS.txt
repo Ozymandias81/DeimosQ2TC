@@ -1,0 +1,15 @@
+Information:
+Source: Quake II and it's expansions
+Count: ~3100
+Palette: Full-color PNGs
+Format: Textures folder
+Anims/Switches: ZDoom compatible
+Description: Textures from Quake II and it's five expansion packs
+
+Credits:
+Conversion: Ceeb
+Author: id Software, Xatrix Entertainment, Rouge Entertainment, Canopy Games, Team Evolve
+Submitted: Ceeb
+
+Description:
+All the Quake II textures. Also has the textures from it's two mission packs, The Reckoning and Ground Zero, the netpack, Extremities, and it's two unlicensed expansions, Juggernaut and Zaero.

@@ -1,0 +1,100 @@
+///////////////////////////////////////
+// POWERUP POD CIRCLE SPAWNERS ////////
+// for REALM667 	       ////////
+// by Tormentor667 	       ////////
+///////////////////////////////////////
+
+Actor BaseOrb
+{
+ +Missile
+ +NoGravity
+ +NoBlockmap
+ +NoInteraction
+ -Solid
+ Radius 0
+ Height 0
+ RenderStyle Add
+ Alpha 0.01
+ YScale 0.1
+ XScale 0.4
+ States
+ {
+  Spawn:
+   LRFX AAAAA 1 Bright A_FadeIn(0.2)
+   LRFX AAAAAAAAAAAAAAAA 1 Bright A_FadeOut(0.07)
+   Stop
+ }
+}
+
+actor GreenCirclePad 191
+{
+//$Category Stronghold_PowerUpPads
+	+NoBlockMap +NoGravity +NoSector +NoInteraction +NoClip -Solid +CLIENTSIDEONLY
+        states
+        {
+        Spawn:
+           Active:
+        	TNT1 A 0
+        	TNT1 A 0 A_SpawnItemEx ("BaseOrb", Args[1], 0, 0, 0, 0, Args[2], 0, SXF_TRANSFERTRANSLATION | SXF_CLIENTSIDE, 0) 
+        	TNT1 A 0 A_SpawnItemEx ("BaseOrb", Args[1], 0, 0, 0, 0, Args[2], 10, SXF_TRANSFERTRANSLATION | SXF_CLIENTSIDE, 0) 
+        	TNT1 A 0 A_SpawnItemEx ("BaseOrb", Args[1], 0, 0, 0, 0, Args[2], 20, SXF_TRANSFERTRANSLATION | SXF_CLIENTSIDE, 0) 
+        	TNT1 A 0 A_SpawnItemEx ("BaseOrb", Args[1], 0, 0, 0, 0, Args[2], 30, SXF_TRANSFERTRANSLATION | SXF_CLIENTSIDE, 0) 
+        	TNT1 A 0 A_SpawnItemEx ("BaseOrb", Args[1], 0, 0, 0, 0, Args[2], 40, SXF_TRANSFERTRANSLATION | SXF_CLIENTSIDE, 0)                                 
+        	TNT1 A 0 A_SpawnItemEx ("BaseOrb", Args[1], 0, 0, 0, 0, Args[2], 50, SXF_TRANSFERTRANSLATION | SXF_CLIENTSIDE, 0)         
+            TNT1 A 0 A_SpawnItemEx ("BaseOrb", Args[1], 0, 0, 0, 0, Args[2], 60, SXF_TRANSFERTRANSLATION | SXF_CLIENTSIDE, 0) 
+          	TNT1 A 0 A_SpawnItemEx ("BaseOrb", Args[1], 0, 0, 0, 0, Args[2], 70, SXF_TRANSFERTRANSLATION | SXF_CLIENTSIDE, 0) 
+          	TNT1 A 0 A_SpawnItemEx ("BaseOrb", Args[1], 0, 0, 0, 0, Args[2], 80, SXF_TRANSFERTRANSLATION | SXF_CLIENTSIDE, 0) 
+          	TNT1 A 0 A_SpawnItemEx ("BaseOrb", Args[1], 0, 0, 0, 0, Args[2], 90, SXF_TRANSFERTRANSLATION | SXF_CLIENTSIDE, 0) 
+          	TNT1 A 0 A_SpawnItemEx ("BaseOrb", Args[1], 0, 0, 0, 0, Args[2],100, SXF_TRANSFERTRANSLATION | SXF_CLIENTSIDE, 0) 
+        	TNT1 A 0 A_SpawnItemEx ("BaseOrb", Args[1], 0, 0, 0, 0, Args[2],110, SXF_TRANSFERTRANSLATION | SXF_CLIENTSIDE, 0) 
+        	TNT1 A 0 A_SpawnItemEx ("BaseOrb", Args[1], 0, 0, 0, 0, Args[2],120, SXF_TRANSFERTRANSLATION | SXF_CLIENTSIDE, 0) 
+        	TNT1 A 0 A_SpawnItemEx ("BaseOrb", Args[1], 0, 0, 0, 0, Args[2],130, SXF_TRANSFERTRANSLATION | SXF_CLIENTSIDE, 0) 
+        	TNT1 A 0 A_SpawnItemEx ("BaseOrb", Args[1], 0, 0, 0, 0, Args[2],140, SXF_TRANSFERTRANSLATION | SXF_CLIENTSIDE, 0)                                 
+        	TNT1 A 0 A_SpawnItemEx ("BaseOrb", Args[1], 0, 0, 0, 0, Args[2],150, SXF_TRANSFERTRANSLATION | SXF_CLIENTSIDE, 0)         
+            TNT1 A 0 A_SpawnItemEx ("BaseOrb", Args[1], 0, 0, 0, 0, Args[2],160, SXF_TRANSFERTRANSLATION | SXF_CLIENTSIDE, 0) 
+          	TNT1 A 0 A_SpawnItemEx ("BaseOrb", Args[1], 0, 0, 0, 0, Args[2],170, SXF_TRANSFERTRANSLATION | SXF_CLIENTSIDE, 0) 
+          	TNT1 A 0 A_SpawnItemEx ("BaseOrb", Args[1], 0, 0, 0, 0, Args[2],180, SXF_TRANSFERTRANSLATION | SXF_CLIENTSIDE, 0) 
+          	TNT1 A 0 A_SpawnItemEx ("BaseOrb", Args[1], 0, 0, 0, 0, Args[2],190, SXF_TRANSFERTRANSLATION | SXF_CLIENTSIDE, 0)                                         
+			TNT1 A 0 A_SpawnItemEx ("BaseOrb", Args[1], 0, 0, 0, 0, Args[2],200, SXF_TRANSFERTRANSLATION | SXF_CLIENTSIDE, 0)           
+			TNT1 A 0 A_SpawnItemEx ("BaseOrb", Args[1], 0, 0, 0, 0, Args[2],210, SXF_TRANSFERTRANSLATION | SXF_CLIENTSIDE, 0)                     
+            TNT1 A 0 A_SpawnItemEx ("BaseOrb", Args[1], 0, 0, 0, 0, Args[2],220, SXF_TRANSFERTRANSLATION | SXF_CLIENTSIDE, 0)                     
+            TNT1 A 0 A_SpawnItemEx ("BaseOrb", Args[1], 0, 0, 0, 0, Args[2],230, SXF_TRANSFERTRANSLATION | SXF_CLIENTSIDE, 0)
+            TNT1 A 0 A_SpawnItemEx ("BaseOrb", Args[1], 0, 0, 0, 0, Args[2],240, SXF_TRANSFERTRANSLATION | SXF_CLIENTSIDE, 0)
+            TNT1 A 0 A_SpawnItemEx ("BaseOrb", Args[1], 0, 0, 0, 0, Args[2],250, SXF_TRANSFERTRANSLATION | SXF_CLIENTSIDE, 0)                              
+            TNT1 A 0 A_SpawnItemEx ("BaseOrb", Args[1], 0, 0, 0, 0, Args[2],260, SXF_TRANSFERTRANSLATION | SXF_CLIENTSIDE, 0)
+            TNT1 A 0 A_SpawnItemEx ("BaseOrb", Args[1], 0, 0, 0, 0, Args[2],270, SXF_TRANSFERTRANSLATION | SXF_CLIENTSIDE, 0)
+            TNT1 A 0 A_SpawnItemEx ("BaseOrb", Args[1], 0, 0, 0, 0, Args[2],280, SXF_TRANSFERTRANSLATION | SXF_CLIENTSIDE, 0)
+            TNT1 A 0 A_SpawnItemEx ("BaseOrb", Args[1], 0, 0, 0, 0, Args[2],290, SXF_TRANSFERTRANSLATION | SXF_CLIENTSIDE, 0)
+            TNT1 A 0 A_SpawnItemEx ("BaseOrb", Args[1], 0, 0, 0, 0, Args[2],300, SXF_TRANSFERTRANSLATION | SXF_CLIENTSIDE, 0)                
+            TNT1 A 0 A_SpawnItemEx ("BaseOrb", Args[1], 0, 0, 0, 0, Args[2],310, SXF_TRANSFERTRANSLATION | SXF_CLIENTSIDE, 0)
+            TNT1 A 0 A_SpawnItemEx ("BaseOrb", Args[1], 0, 0, 0, 0, Args[2],320, SXF_TRANSFERTRANSLATION | SXF_CLIENTSIDE, 0)
+            TNT1 A 0 A_SpawnItemEx ("BaseOrb", Args[1], 0, 0, 0, 0, Args[2],330, SXF_TRANSFERTRANSLATION | SXF_CLIENTSIDE, 0)
+            TNT1 A 0 A_SpawnItemEx ("BaseOrb", Args[1], 0, 0, 0, 0, Args[2],340, SXF_TRANSFERTRANSLATION | SXF_CLIENTSIDE, 0)               
+            TNT1 A 4 A_SpawnItemEx ("BaseOrb", Args[1], 0, 0, 0, 0, Args[2],350, SXF_TRANSFERTRANSLATION | SXF_CLIENTSIDE, 0)               
+        	Loop
+           Inactive:
+		TNT1 A 1
+		Loop
+        }     
+        
+}
+
+actor BlueCirclePad : GreenCirclePad 192
+{
+	translation "112:127=196:207"
+}
+
+actor WhiteCirclePad : GreenCirclePad 193
+{
+	translation "112:127=80:111"
+}
+
+actor RedCirclePad : GreenCirclePad 194
+{
+	translation "112:127=176:191"
+}
+
+actor OrangeCirclePad: GreenCirclePad 195
+{
+	translation "112:127=214:223"
+}

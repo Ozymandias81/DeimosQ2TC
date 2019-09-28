@@ -1,0 +1,7 @@
+Type: PowerUp Ring Spawners
+Connection: None
+SpawnOffsets: Argument
+Documentation: Yes
+SpawnCeiling: No
+Variants: 5 (green, blue, orange, red, white)
+Summon: [Color]CirclePad 

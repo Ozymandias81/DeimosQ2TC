@@ -1,0 +1,3 @@
+ClearPlayerClasses
+AddPlayerClass Q2Player
+Alias Wave "PukeName Q2TauntScript %1"

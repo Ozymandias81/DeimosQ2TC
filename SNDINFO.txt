@@ -1,0 +1,468 @@
+//Weapons
+Weapons/NoAmmo			NOAMMO
+Weapons/BlasterFire		BLASTF1A
+Weapons/LaserFly		LASFLY
+Weapons/LaserHit		LASHIT
+Weapons/ShotGunFire		SHOTGF1B
+Weapons/ShotGunPump		SHOTGR1B
+Weapons/SuperShotGunFire	SSHOTF1B
+$Random Weapons/MachinegunFire { Weapons/MachinegunFire1 Weapons/MachinegunFire2 Weapons/MachinegunFire3 Weapons/MachinegunFire4 Weapons/MachinegunFire5 }
+Weapons/MachinegunFire1		MACHGF1B
+Weapons/MachinegunFire2		MACHGF2B
+Weapons/MachinegunFire3		MACHGF3B
+Weapons/MachinegunFire4		MACHGF4B
+Weapons/MachinegunFire5		MACHGF5B
+Weapons/ChaingunSpinUp		CHNGNU1A
+Weapons/ChaingunSpinning	CHNGNL1A
+Weapons/ChaingunSpinDown	CHNGND1A
+Weapons/HGrenadeActivate	HGRENA1B
+Weapons/HGrenadeThrow		HGRENT1A
+$Random Weapons/HGrenadeBounce { Weapons/HGrenadeBounce1 Weapons/HGrenadeBounce2 }
+Weapons/HGrenadeBounce1		HGRENB1A
+Weapons/HGrenadeBounce2		HGRENB2A
+Weapons/HGrenadeCount		HGRENC1B
+Weapons/GrenadeLauncherFire	GRENLF1A
+Weapons/GrenadeLauncherReload	GRENLR1B
+Weapons/GrenadeBounce		GRENLB1B
+Weapons/GrenadeExplosion	GRENLX1A
+Weapons/RocketLauncherFire	ROCKLF1A
+Weapons/RocketLauncherLoad	ROCKLR1B
+Weapons/RocketFly		ROCKFLY
+Weapons/RocketExplosion		ROCKLX1A
+Weapons/HyperBlasterLoop	HYPRBL1A
+Weapons/HyperBlasterFire	HYPRBF1A
+Weapons/HyperBlasterStop	HYPRBD1A
+Weapons/RailGunLoop		RG_HUM
+Weapons/RailGunFire		RAILGF1A
+Weapons/RailGunCharge		RAILGR1A
+$Alias weapons/railgf		Weapons/RailGunFire
+Weapons/BFG10KLoop		BFG_HUM
+Weapons/BFG10KFire		BFG__F1Y
+Weapons/BFG10KFly		BFG__L1A
+Weapons/BFG10KExplode		BFG__X1B
+Weapons/BFG10KShot		BFG_FIRE
+Weapons/SNG				SPIKE2
+Weapons/LightningStart	LSTART
+Weapons/Lightning		LHIT
+$Random World/Ricochet { World/Ricochet1 World/Ricochet2 World/Ricochet3 }
+World/Ricochet1	RIC1
+World/Ricochet2	RIC2
+World/Ricochet3	RIC3
+
+//Items
+misc/keytry		KEYTRY
+misc/k_pkup		KEYUSE
+misc/ammo_pkup		AM_PKUP
+misc/m_health		M_HEALTH
+misc/l_health		L_HEALTH
+misc/n_health		N_HEALTH
+misc/s_health		S_HEALTH
+misc/ar_pkup		AR1_PKUP
+misc/ar2_pkup		AR2_PKUP
+misc/ar3_pkup		AR3_PKUP
+Misc/W_Pkup w_pkup
+Powerup/Pickup		PKUP
+Powerup/QuadDamage/Use		DAMAGE
+Powerup/QuadDamage/Attack	DAMAGE3
+Powerup/QuadDamage/Empty	DAMAGE2
+Powerup/Invulnerability/Use		protect
+Powerup/Invulnerability/Empty	protect2
+Powerup/Invulnerability/Active	protect3
+
+$random drum_moving { drum_moving1 drum_moving2 drum_moving3 }
+drum_moving1 drmv01
+drum_moving2 drmv02
+drum_moving3 drmv03
+
+//Enemies
+$Random Q2Soldier/Sight { Q2Soldier/Sight1 Q2Soldier/Sight2 }
+Q2Soldier/Sight1		SOLSGHT1
+Q2Soldier/Sight2		SOLSRCH1
+Q2Soldier/Active		SOLIDLE1
+Q2Soldier/ShotGun		SOLATCK1
+Q2Soldier/Blaster		SOLATCK2
+Q2Soldier/Machinegun	SOLATCK3
+$Random Q2Soldier/Pain { Q2Soldier/Pain1 Q2Soldier/Pain2 Q2Soldier/Pain3 }
+Q2Soldier/Pain1			SOLPAIN1
+Q2Soldier/Pain2			SOLPAIN2
+Q2Soldier/Pain3 		SOLPAIN3
+$Random Q2Soldier/Death { Q2Soldier/Death1 Q2Soldier/Death2 Q2Soldier/Death3 }
+Q2Soldier/Death1		SOLDETH1
+Q2Soldier/Death2		SOLDETH2
+Q2Soldier/Death3		SOLDETH3
+
+$Random Infantry/Sight { Infantry/Sight1 Infantry/Sight2 }
+Infantry/Sight1		INFSGHT1
+Infantry/Sight2		INFSRCH1
+Infantry/Active		INFIDLE1
+Infantry/Attack1	INFATCK1
+Infantry/Attack2	INFATCK2
+Infantry/Attack3	INFATCK3
+Infantry/Melee		MELEE2
+$Random Infantry/Pain { Infantry/Pain1 Infantry/Pain2 }
+Infantry/Pain1		INFPAIN1
+Infantry/Pain2		INFPAIN2
+$Random Infantry/Death { Infantry/Death1 Infantry/Death2 }
+Infantry/Death1		INFDETH1
+Infantry/Death2		INFDETH2
+
+Gunner/Sight	SIGHT1
+Gunner/Active	GUNIDLE1
+Gunner/Active2	GUNSRCH1
+Gunner/Attack1	GUNATCK1
+Gunner/Attack2	GUNATCK2
+Gunner/Attack3	GUNATCK3
+$Random Gunner/Pain { Gunner/Pain1 Gunner/Pain2 }
+Gunner/Pain1	GUNPAIN1
+Gunner/Pain2	GUNPAIN2
+Gunner/Death	DEATH1
+
+Gladiator/Sight		GLDSGHT1
+Gladiator/Active	GLDIDLE1
+Gladiator/Melee1	GLDMELE1
+Gladiator/Melee2	GLDMELE2
+Gladiator/Railgun	GLDRLGN1
+$Random Gladiator/Pain { Gladiator/Pain1 Gladiator/Pain2 }
+Gladiator/Pain1		GLDPAIN1
+Gladiator/Pain2		GLDPAIN2
+Gladiator/Death		GLDDETH1
+Gladiator/Deathb	GLDDETH2
+
+Flyer/Sight	FLYSGHT1
+Flyer/Fly	FLYIDLE1
+Flyer/Active	FLYSRCH1
+Flyer/Melee1	FLYATCK1
+Flyer/Melee2	FLYATCK2
+Flyer/Attack	FLYATCK3
+$Random Flyer/Pain { Flyer/Pain1 Flyer/Pain2 }
+Flyer/Pain1	FLYPAIN1
+Flyer/Pain2	FLYPAIN2
+Flyer/Death	FLYDETH1
+
+Hover/Sight		HOVSGHT1
+Hover/Fly		HOVIDLE1
+$Random Hover/Active { Hover/Active1 Hover/Active2 }
+Hover/Active1	HOVSRCH1
+Hover/Active2	HOVSRCH2
+Hover/Attack	HOVATCK1
+$Random Hover/Pain { Hover/Pain1 Hover/Pain2 }
+Hover/Pain1		HOVPAIN1
+Hover/Pain2		HOVPAIN2
+Hover/Death	HOVDETH1
+
+Berserker/Sight		BERSGHT1
+$Random Berserker/Active { Berserker/Active1 Berserker/Active2 }
+Berserker/Active1	BERSRCH1
+Berserker/Active2	BERIDLE2
+Berserker/Idle		BERIDLE1
+Berserker/Attack	BERATCK1
+Berserker/Pain		BERPAIN2
+Berserker/Death		BERDETH1
+
+IronMaiden/Sight		CHKSGHT1
+IronMaiden/Idle		CHKIDLE1
+IronMaiden/Active		CHKSRCH1
+IronMaiden/Attack1		CHKATCK1
+IronMaiden/Attack2		CHKATCK2
+IronMaiden/Attack3		CHKATCK3
+IronMaiden/Attack4		CHKATCK4
+IronMaiden/Attack5		CHKATCK5
+$Random IronMaiden/Pain { IronMaiden/Pain1 IronMaiden/Pain2 IronMaiden/Pain3 }
+IronMaiden/Pain1		CHKPAIN1
+IronMaiden/Pain2		CHKPAIN2
+IronMaiden/Pain3		CHKPAIN3
+$Random IronMaiden/Death { IronMaiden/Death1 IronMaiden/Death2 }
+IronMaiden/Death1		CHKDETH2
+IronMaiden/Death2		CHKDETH2
+
+Q2Brain/Sight		BRNSGHT1
+Q2Brain/Active1		BRNSRCH1
+Q2Brain/Active2		BRNIDLE1
+Q2Brain/Attack		BRNATCK1
+Q2Brain/OpenChest	BRNLENS1
+Q2Brain/Attack2		BRNATCK3
+$Random Q2Brain/Pain { Q2Brain/Pain1 Q2Brain/Pain2 }
+Q2Brain/Pain1		BRNPAIN1
+Q2Brain/Pain2		BRNPAIN2
+Q2Brain/Death		BRNDETH1
+
+Tank/Sight		TNKSGTH1
+Tank/Active		TNKIDLE1
+Tank/Step		TNKSTEP1
+Tank/Attack1		TNKATCK1
+$Random Tank/Attack2 { Tank/Attack2a Tank/Attack2b Tank/Attack2c Tank/Attack2d }
+Tank/Attack2a		TNKATK2A
+Tank/Attack2b		TNKATK2B
+Tank/Attack2c		TNKATK2C
+Tank/Attack2d		TNKATK2D
+Tank/Attack3		TNKATCK3
+Tank/Attack4		TNKATCK4
+Tank/Attack5		TNKATCK5
+$Random Tank/Pain { Tank/Pain1 Tank/Pain2 }
+Tank/Pain1		TNKPAIN1
+Tank/Pain2		TNKPAIN2
+Tank/Death		TNKDETH1
+Tank/Death2		TNKDETH2
+
+$Alias Makron/Sight Makron/Pain
+Makron/Active		BS3IDLE1
+Makron/Step		BS3SRCH1
+Makron/Attack1		BS3ATCK1
+Makron/Attack2		BS3ATCK2
+Makron/Attack3		BS3ATCK3
+Makron/Attack4		BS3ATCK4
+Makron/Attack5		BS3ATCK5
+$Random Makron/Pain { Makron/Pain1 Makron/Pain2 }
+Makron/Pain1		BS3PAIN1
+Makron/Pain2		BS3PAIN2
+Makron/Pain3		BS3PAIN3
+Makron/Death		BS3DETH1
+Makron/Deathb		BS3DETH2
+
+$Random Jorg/Sight { Jorg/Voice1 Jorg/Pain }
+$Random Jorg/Active { Jorg/Roar Jorg/Laugh }
+Jorg/Land		"Sounds/Makron/makron_land.wav"
+$Random Jorg/Step { Jorg/Step1 Jorg/Step2 }
+Jorg/Step1		"Sounds/Makron/makron_step1.wav"
+Jorg/Step2		"Sounds/Makron/makron_step2.wav"
+Jorg/Popup		"Sounds/Makron/makron_popup.wav"
+Jorg/Blaster		"Sounds/Makron/makron_blaster.wav"
+$Random Jorg/Roar { Jorg/Roar1 Jorg/Roar2 }
+Jorg/Roar1		"Sounds/Makron/makron_roar1.wav"
+Jorg/Roar2		"Sounds/Makron/makron_roar2.wav"
+$Random Jorg/Voice { Jorg/Voice1 Jorg/Voice2 Jorg/Voice3 }
+Jorg/Voice1		"Sounds/Makron/makron_voice.wav"
+Jorg/Voice2		"Sounds/Makron/makron_voice3.wav"
+Jorg/Voice3		"Sounds/Makron/makron_voice4.wav"
+$Random Jorg/Laugh { Jorg/Laugh1 Jorg/Laugh2 Jorg/Laugh3 Jorg/Laugh4 }
+Jorg/Laugh1		"Sounds/Makron/makron_laf1.wav"
+Jorg/Laugh2		"Sounds/Makron/makron_laf2.wav"
+Jorg/Laugh3		"Sounds/Makron/makron_laf3.wav"
+Jorg/Laugh4		"Sounds/Makron/makron_laf4.wav"
+$Random Jorg/Pain { Jorg/Pain1 Jorg/Pain2 Jorg/Pain3 }
+Jorg/Pain1		"Sounds/Makron/makron_pain1.wav"
+Jorg/Pain2		"Sounds/Makron/makron_pain2.wav"
+Jorg/Pain3		"Sounds/Makron/makron_pain3.wav"
+Jorg/Death		"Sounds/Makron/makron_death.wav"
+Jorg/Spine		"Sounds/Makron/makron_spine.wav"
+Jorg/Brain		"Sounds/Makron/makron_brain1.wav"
+
+TankBoss/Sight		BTKUNQV1
+TankBoss/Active		BTKUNQV2
+TankBoss/Engine		BTKENGN1
+$Random TankBoss/Pain { TankBoss/Pain1 TankBoss/Pain2 TankBoss/Pain3 }
+TankBoss/Pain1		BTKPAIN1
+TankBoss/Pain2		BTKPAIN2
+TankBoss/Death		BTKDETH1
+TankBoss/Pain3		BTNKPAIN3
+
+Medic/Sight		MEDSGHT1
+Medic/Active		MEDSRCH1
+Medic/Idle		MEDIDLE
+Medic/Attack		MEDATCK1
+Medic/Heal		MEDATCK2
+$Random Medic/Pain { Medic/Pain1 Medic/Pain2 }
+Medic/Pain1		MEDPAIN1
+Medic/Pain2		MEDPAIN2
+Medic/Death		MEDDETH1
+
+Hornet/Sight	BHVUNQV1
+Hornet/Engine	BHVENGN1
+Hornet/Rocket	ROCKET
+$Random Hornet/Pain { Hornet/Pain1 Hornet/Pain2 Hornet/Pain3 }
+Hornet/Pain1	BHVPAIN1
+Hornet/Pain2	BHVPAIN2
+Hornet/Pain3	BHVPAIN3
+Hornet/Death	BHVDETH1
+
+Parasite/Sight		PARSGHT1
+Parasite/Active		PARSRCH1
+Parasite/Attack1	PARATCK1
+Parasite/Attack2	PARATCK2
+Parasite/Attack3	PARATCK3
+Parasite/Attack4	PARATCK4
+$Random Parasite/Pain { Parasite/Pain1 Parasite/Pain2 }
+Parasite/Pain1		PARPAIN1
+Parasite/Pain2		PARPAIN2
+Parasite/Death		PARDETH1
+
+$Random Grunt/Pain100 { Grunt/Pain100a Grunt/Pain100b }
+Grunt/Pain100a	DSMPNA
+Grunt/Pain100b	DSMPNB
+$Random Grunt/Pain75 { Grunt/Pain75a Grunt/Pain75b }
+Grunt/Pain75a	DSMPN75A
+Grunt/Pain75b	DSMPN75B
+$Random Grunt/Pain50 { Grunt/Pain50a Grunt/Pain50b }
+Grunt/Pain50a	DSMPN50A
+Grunt/Pain50b	DSMPN50B
+$Random Grunt/Pain25 { Grunt/Pain25a Grunt/Pain25b }
+Grunt/Pain25a	DSMPN25A
+Grunt/Pain25b	DSMPN25B
+$Random Grunt/Death { Grunt/Death1 Grunt/Death2 Grunt/Death3 Grunt/Death4 }
+Grunt/Death1		DSMDTH1
+Grunt/Death2		DSMDTH2
+Grunt/Death3		DSMDTH3
+Grunt/Death4		DSMDTH4
+
+Grunt/Grunt		DSMGRUNT
+Grunt/Jump		DSMJUMP
+Grunt/Land		DSMLAND
+Grunt/Fall		DSMFALL
+$playeralias		Grunt	male	*pain100	Grunt/Pain100
+$playeralias		Grunt	male	*pain75		Grunt/Pain75
+$playeralias		Grunt	male	*pain50		Grunt/Pain50
+$playeralias		Grunt	male	*pain25		Grunt/Pain25
+$playeralias		Grunt	male	*death		Grunt/Death
+$playeralias		Grunt	male	*grunt		Grunt/Grunt
+$playeralias		Grunt	male	*usefail	Grunt/Grunt
+$playeralias		Grunt	male	*land		Grunt/Land
+$playeralias		Grunt	male	*jump		Grunt/Jump
+$playeralias		Grunt	male	*fallpain	Grunt/Fall
+
+$Random Misc/FootStep { Misc/FootStep1 Misc/FootStep2 Misc/FootStep3 Misc/FootStep4 }
+Misc/FootStep1	Step1
+Misc/FootStep2	Step2
+Misc/FootStep3	Step3
+Misc/FootStep4	Step4
+
+$random	usmc/pain		{ usmc/pain1 usmc/pain2 usmc/pain3 usmc/pain4 usmc/pain5 }
+
+usmc/pain1			m01TFEA_
+usmc/pain2			m04TFEA_
+usmc/pain3			m05TFEA_
+usmc/pain4			m06TFEA_
+usmc/pain5			m07TFEA_
+
+usmc/death1			death01
+usmc/death2			death02
+usmc/death3			death03
+usmc/death4			dedman1
+usmc/death5			dedman2
+usmc/death6			dedman3
+usmc/death7			dedman4
+usmc/death8			dedman5
+usmc/death9			dedman6
+usmc/death10		dedman8
+usmc/death11		dedman9
+usmc/death12		dedman10
+usmc/death13		dedman11
+usmc/death14		dedman12
+
+$random usmc/death	{ usmc/death1 usmc/death2 usmc/death3 usmc/death4 usmc/death5 usmc/death6 usmc/death7 usmc/death8 usmc/death9 usmc/death10 usmc/death11 usmc/death12 usmc/death13 usmc/death14 }
+
+Ranger/Sight		rngsght
+Ranger/Idle			rngidle
+Ranger/Attack1		rngatk1
+Ranger/Attack1b		rngatk1b
+Ranger/Attack2		rngatk2
+Ranger/Attack2b		rngatk2b
+Ranger/Attack3		rngatk3
+Ranger/Attack3b		rngatk3b
+$Random Ranger/Pain { Ranger/Pain1 Ranger/Pain2 Ranger/Pain3 Ranger/Pain4 Ranger/Pain5 Ranger/Pain6 }
+Ranger/Pain1		rngpn1
+Ranger/Pain2		rngpn2
+Ranger/Pain3		rngpn3
+Ranger/Pain4		rngpn4
+Ranger/Pain5		rngpn5
+Ranger/Pain6		rngpn6
+$Random Ranger/Death { Ranger/Death1 Ranger/Death2 Ranger/Death3 Ranger/Death4 Ranger/Death5 }
+Ranger/Death1		rngdeth1
+Ranger/Death2		rngdeth2
+Ranger/Death3		rngdeth3
+Ranger/Death4		rngdeth4
+Ranger/Death5		rngdeth5
+Ranger/XDeath		q1gib
+
+$random viper/flyby { viper/flyby1 viper/flyby2 }
+viper/flyby1 dsviper1
+viper/flyby2 dsviper2
+
+sparks/quake1 spark1
+sparks/quake2 spark2
+sparks/quake3 spark3
+
+$random sparks/quake {sparks/quake1 sparks/quake2 sparks/quake3}
+
+end end
+start start
+
+MOSCAS MOSCAS
+BASE1 BASE1
+BASE2 BASE2
+BASE3 BASE3
+BASE4 BASE4
+BASE5 BASE5
+BASE6 BASE6
+BASE7 BASE7
+IND1 IND1
+IND2 IND2
+IND3 IND3
+IND4 IND4
+IND5 IND5
+IND6 IND6
+IND7 IND7
+IND8 IND8
+IND9 IND9
+IND10 IND10
+IND11 IND11
+IND12 IND12
+IND13 IND13
+IND14 IND14
+IND15 IND15
+IND16 IND16
+BATTLE1 BATTLE1
+BATTLE2 BATTLE2
+BATTLE3 BATTLE3
+BATTLE4 BATTLE4
+BATTLE5 BATTLE5
+COMP1 COMP1
+COMP2 COMP2
+COMP3 COMP3
+PUMP1 PUMP1
+PUMP2 PUMP2
+PUMP3 PUMP3
+WATER1 WATER1
+WIND2 WIND2
+BRKGLAS BRKGLAS
+KLAXON2 KLAXON2
+KEYTRY KEYTRY
+KEYUSE KEYUSE
+
+$AMBIENT 1 MOSCAS POINT CONTINUOUS 0.2
+$AMBIENT 2 BASE1 POINT CONTINUOUS 1.0
+$AMBIENT 3 BASE2 POINT CONTINUOUS 1.0
+$AMBIENT 4 BASE4 POINT CONTINUOUS 1.0
+$AMBIENT 5 BASE5 POINT CONTINUOUS 1.0
+$AMBIENT 6 BASE6 POINT CONTINUOUS 1.0
+$AMBIENT 7 BASE7 POINT CONTINUOUS 1.0
+$AMBIENT 8 IND1 POINT CONTINUOUS 1.0
+$AMBIENT 9 IND2 POINT CONTINUOUS 1.0
+$AMBIENT 10 IND3 POINT CONTINUOUS 1.0
+$AMBIENT 11 IND4 POINT CONTINUOUS 1.0
+$AMBIENT 12 IND5 POINT CONTINUOUS 1.0
+$AMBIENT 13 IND6 POINT CONTINUOUS 1.0
+$AMBIENT 14 IND7 POINT CONTINUOUS 0.3
+$AMBIENT 15 IND8 POINT CONTINUOUS 0.3
+$AMBIENT 16 IND9 POINT CONTINUOUS 0.3
+$AMBIENT 17 IND10 POINT CONTINUOUS 0.3
+$AMBIENT 18 IND11 POINT CONTINUOUS 0.3
+$AMBIENT 19 IND12 POINT CONTINUOUS 0.3
+$AMBIENT 20 IND13 POINT CONTINUOUS 0.3
+$AMBIENT 21 IND14 POINT CONTINUOUS 1.0
+$AMBIENT 22 IND15 POINT CONTINUOUS 1.0
+$AMBIENT 23 IND16 POINT CONTINUOUS 1.0
+$AMBIENT 24 BATTLE1 POINT CONTINUOUS 1.0
+$AMBIENT 25 BATTLE2 POINT CONTINUOUS 1.0
+$AMBIENT 26 BATTLE3 POINT CONTINUOUS 1.0
+$AMBIENT 27 BATTLE4 POINT CONTINUOUS 1.0
+$AMBIENT 28 BATTLE5 POINT CONTINUOUS 1.0
+$AMBIENT 29 COMP1 POINT CONTINUOUS 1.0
+$AMBIENT 30 COMP2 POINT CONTINUOUS 1.0
+$AMBIENT 31 COMP3 POINT CONTINUOUS 1.0
+$AMBIENT 32 PUMP1 POINT CONTINUOUS 1.0
+$AMBIENT 33 PUMP2 POINT CONTINUOUS 1.0
+$AMBIENT 34 PUMP3 POINT CONTINUOUS 1.0
+$AMBIENT 35 WATER1 POINT CONTINUOUS 1.0
+$AMBIENT 36 WIND2 POINT CONTINUOUS 0.5
+$AMBIENT 37 BASE3 POINT CONTINUOUS 1.0
+$AMBIENT 38 KLAXON2 POINT CONTINUOUS 1.0

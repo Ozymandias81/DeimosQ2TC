@@ -1,0 +1,124 @@
+//////////////////////////////////
+
+clearepisodes
+
+episode U1M1
+{
+	name = "Quake 2 TC"
+	noskillmenu
+}
+
+//////////////////////////////////
+
+defaultmap
+{
+	noinfighting
+	nointermission
+	fallingdamage
+	keepfullinventory
+}
+
+//////////////////////////////////
+
+Map TITLEMAP "Main Menu"
+{
+	music = "INTRO"
+}
+
+////UNIT 1////
+
+Map U1M1 "Strogg Outpost"
+{
+	levelnum = 1
+	music = "U1M1"
+	sky1 = "Q4SKY2"//, 0.2
+	cluster = 1
+}
+
+Map U1M2 "Outer Base"
+{
+	levelnum = 2
+	music = "U1M2"
+	sky1 = "Q4SKY2"//, 0.2
+	cluster = 1
+}
+
+Map U1M3 "Installation"
+{
+	levelnum = 3
+	music = "U1M3"
+	sky1 = "Q4SKY2"//, 0.2
+	next = "EndGame1"
+	cluster = 1
+}
+
+Map U1M4 "Communication Center"
+{
+	levelnum = 4
+	music = "U1M4"
+	sky1 = "Q4SKY2"//, 0.2
+	cluster = 1
+}
+////UNIT 2////
+
+
+////UNIT 3////
+
+Map U3M3 "Distribution Station"
+{
+	music = "U1M3"
+	sky1 = "Q4SKY2"//, 0.2
+	cluster = 3
+}
+
+////UNIT 4////
+
+Map U4M3 "Nuclear Reactor"
+{
+	music = "U1M3"
+	sky1 = "Q4SKY2"//, 0.2
+	cluster = 4
+}
+
+////CLUSTERS////
+
+cluster 1
+{ PIC = "INTER1" music = "D_DM2INT" hub
+
+exittext = 
+"Thank you for completing this demo and I",
+"hope you have enjoyed this first unit,",
+"the Outer Stronghold.",
+"",
+"I am already working on the next unit,",
+"the Space Fleet where you will battle your",
+"way through a series of Strogg warships",
+"and orbital stations.",
+"",
+"Don't forget to give me your feedback",
+"as it will be crucial for the development",
+"of the upcoming units.",
+"And again, thank you so much!"
+
+}
+
+cluster 2
+{
+	pic = ""
+	music = ""
+	hub
+}
+
+cluster 3
+{
+	pic = ""
+	music = ""
+	hub
+}
+
+cluster 4
+{
+	pic = ""
+	music = ""
+	hub
+}

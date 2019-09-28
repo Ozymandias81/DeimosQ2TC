@@ -1,0 +1,4 @@
+
+Server bool q2_balanceweaps = false;
+Server bool q2_barrelanim = true;
+Server bool q2_barrelinstant = false;

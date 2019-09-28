@@ -1,0 +1,7 @@
+Type: Forcefield Laserbeams
+Connection: None
+SpawnOffsets: Z-offset
+Documentation: Yes
+SpawnCeiling: No
+Variants: 5 (green, blue, orange, red, white)
+Summon: LaserBeam_[Color]_[Direction]

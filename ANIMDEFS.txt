@@ -1,0 +1,77 @@
+texture Q2TX0850
+   pic Q2TX0850 tics 60
+   pic Q2TX0013 tics 60
+
+texture UPDOWN_1
+   pic UPDOWN_1 tics 30
+   pic UPDOWN_5 tics 30
+
+texture UPDOWN_3
+   pic UPDOWN_3 tics 30
+   pic UPDOWN_5 tics 30
+
+texture LITE_1_1 range LITE_1_4 tics 5 oscillate //green alien light
+
+texture LITE2_1 range LITE2_10 tics 4 oscillate //another green alien light
+
+texture CP_1_1 range CP_1_5 tics 7 //scrolling text
+
+texture CP_2_01 range CP_2_20 tics 2 //lifesigns or some kind of other scanner
+
+texture CP_3_1 range CP_3_4 tics 5 //random computer
+
+texture MON_1_1 range MON_1_3 rand 4 8 //security monitors
+
+texture MON_2_1 range MON_2_3 tics 2 //static
+
+texture BOMB_1 range BOMB_4 tics 16 //bomb neon sign or monitor
+
+texture WAT_1 range WAT_7 rand 12 24 //I DON'T KNOW
+
+texture ALRM_1_1 range ALRM_1_2 tics 5 //yellow alarm screen
+
+texture ALRM_2_1 range ALRM_2_2 tics 5 //red alarm screen
+
+texture BOXG_1 range BOXG_7 tics 6 oscillate //glowing crate/grille
+
+warp texture WATER_1
+warp texture WATER_2
+warp texture WATER_3
+warp texture WATER_4
+warp texture WATER_5
+warp texture WATER_6
+warp texture WATER_7
+warp texture WATER_8
+warp texture WATER_9
+warp texture WATER_10
+
+warp texture J_WAT1 //Juggernaut water
+warp texture J_WAT2
+warp texture J_WAT3
+warp texture J_WAT4
+
+warp texture LAVA_1
+warp texture LAVA_2
+warp texture LAVA_3
+warp texture LAVA_4
+
+warp texture SLUDGE_1
+warp texture SLUDGE_2
+warp texture SLUDGE_3
+warp texture SLUDGE_4
+
+/*
+So I decided to do an updated full-color Quake II megapack.
+I'm not gonna lie, I'm not sure the two official mission packs
+contributed anything new after I finished pruning the duplicates.
+Either way, listing them to be safe. Also, skyboxes are available
+in a seperate archive. Message me on Realm667 if you want 'em.
+
+There may be some numerical gaps in the texture names. I did a
+couple extra passes manually to check for stuff like animations
+I may have missed and so on. Rest assured that everything is there.
+
+While I can't speak for their quality as games, Juggernaut and
+Zaero have some very neat textures... Too bad the games were
+unlicensed. Oh well! Have fun! --Ceeb
+*/

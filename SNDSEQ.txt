@@ -1,0 +1,5 @@
+:puertacorredera
+	door		1
+	playrepeat	start
+	stopsound	end
+end

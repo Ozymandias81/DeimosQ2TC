@@ -1,0 +1,4 @@
+STARTUPTITLE = "Quake 2 TC: Great Zigurath Destruction"
+STARTUPCOLORS = "10 FF 60", "10 30 10"
+STARTUPTYPE = Hexen
+STARTUPSONG = STRTP

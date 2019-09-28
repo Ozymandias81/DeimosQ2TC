@@ -1,0 +1,4 @@
+07/17/2016 - Blue Shadow
+- Fixed: The laser beams did not spawn in "no monsters" mode.
+- The spawners no longer need to be shootable.
+- Some code cleanup.

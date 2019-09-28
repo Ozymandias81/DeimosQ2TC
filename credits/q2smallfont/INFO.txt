@@ -1,0 +1,15 @@
+Name: Quake 2 Small
+Type: SmallFont
+Format: FON2
+Variants: 7
+Replaces: SmallFont
+Size: 10px
+Paletted: Doom
+Lower-cases: Yes
+Individual glyphs/character maps included: Yes
+Standard GFX included: N/A
+
+
+Our old friend the Quake 2 message font. Variants include: default, outlined, no monospacing,
+outlined + no monospacing, outlined + no monospacing + kerning, no monospacing + shadowed,
+no monospacing + red shadowed.

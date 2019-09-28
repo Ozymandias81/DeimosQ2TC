@@ -1,0 +1,7 @@
+- Deimos Anomaly for bieng the creator of this mod
+- TheCameleonMaligno and theundeadsoldier for Quake II Stuff, without it this mod wouldn't have been possible at all
+- Ozymandias81 for playtesting, tech help, resource building, modelling, programming and tweaks
+- Osjclatchford for his Nintendo64 railgun/bfg10k skins and muzzleflashes codes for weapons
+- Ceeb for his awesome Quake 2 textures pack
+- Tiger for the cool pk3 builder tool for github repository
+- iD Software for Quake II

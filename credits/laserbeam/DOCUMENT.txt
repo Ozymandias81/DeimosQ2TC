@@ -1,0 +1,2 @@
+Place on map where the laserbeam has to start, point it in the direction where it is
+going to end.
