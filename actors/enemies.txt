@@ -9,30 +9,6 @@ Actor EnemyFlashSpawner : EffectBase
 		Stop
 	}
 }
-Actor DestroyableBodyThing // this thing does not work on Zandronum
-{
-	Radius 25
-	Height 10
-	Health 60
-	Mass 0x7fffffff
-	+NOTARGETSWITCH
-	States
-	{
-	Spawn:
-		TNT1 A 0 NoDelay A_Warp(AAPTR_MASTER,0,0,0,0,WARPF_NOCHECKPOSITION,1)
-		Stop
-		TNT1 A 0 A_SetShootable
-		TNT1 A 1 A_JumpIfInTargetInventory(ResurrectedToken,1,"Null")
-		Loop
-	Death:
-	Crush:
-		TNT1 A 0 A_RemoveMaster
-		TNT1 AAAAAAA 0 A_SpawnItemEx(Q2Gib,Random(0,40),0,5,Random(0,1),0,2,Random(1,360))
-		TNT1 A 5 A_XScream
-		Stop
-	}
-}
-Actor ResurrectedToken : InvBoolean {}
 Actor Q2SoldierBase : Zombieman
 {
 	Speed 12
