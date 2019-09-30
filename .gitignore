@@ -8,6 +8,7 @@
 *.tmp
 *.zip
 *.mtl
+_toadd/
 mm3drc
 dock.dat
 keycfg.in
