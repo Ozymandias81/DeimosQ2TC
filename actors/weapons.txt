@@ -1082,18 +1082,20 @@ ACTOR Q2BFG10K : Q2Weapon Replaces BFG9000
 		QBFG HIJKLMNO 3
 		TNT1 A 0 A_TakeInventory(Q2Cell,25,TIF_NOTAKEINFINITE)
 		QBFG P 0 A_JumpIf(ACS_NamedExecuteWithResult("GetCvarInfo",0)==True,"DFire")
-		QBFG P 0 A_FireCustomMissile("BFG10KBall",0,1,10,8)
+		QBFG P 0 A_FireCustomMissile("BFGShot",0,1,10,8) //BFG10KBall
 		QBFG P 0 A_GunFlash
 		QBFG PQQRSTUVWXYZ 3
 		QBF2 ABC 3
 		QBF2 C 0 A_CheckReload
 		Goto Ready+1
 	DFire:
-		QBFG P 0 A_FireCustomMissile("BFG10KBall2",0,0,10,8)
+		TNT1 A 0 A_GiveInventory(PowerWeaponLevel2,1,TIF_NOTAKEINFINITE)
+		QBFG P 0 A_FireCustomMissile("BFGShot",0,0,10,8) //BFG10KBall2
 		QBFG P 0 A_GunFlash
 		QBFG PQQRSTUU 3
 		QBFG VWXYZ 3 A_ReFire
 		QBF2 ABC 3 A_ReFire
+		TNT1 A 0 A_TakeInventory(PowerWeaponLevel2,1,TIF_NOTAKEINFINITE)
 		QBF2 C 0 A_CheckReload
 		Goto Ready+1
 	Flash:

@@ -1,6 +1,4 @@
+_toadd
 tools
-.git*
 build.bat
-build.sh
-dist
-util
+.git*

@@ -4,4 +4,5 @@
 - Osjclatchford for his Nintendo64 railgun/bfg10k skins and muzzleflashes codes for weapons
 - Ceeb for his awesome Quake 2 textures pack
 - Tiger for the cool pk3 builder tool for github repository
+- hfc2x for BFGStuff zscript codes from PSX Quake 2 DM mod ( forum.zdoom.org/viewtopic.php?f=19&t=25445 )
 - iD Software for Quake II

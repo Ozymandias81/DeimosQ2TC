@@ -123,6 +123,57 @@ PointLight Explosion_X5 { Color 0.6 0.4 0.0 Size 50 }
 PointLight Explosion_X6 { Color 0.4 0.2 0.0 Size 45 }
 PointLight Explosion_X7 { Color 0.2 0.1 0.0 Size 40 }
 // BFG
+pointlight BFG10K_X1
+{
+    color 0.0 1.0 0.0
+    size 256
+}
+
+pointlight BFG10K_X2
+{
+    color 0.0 1.0 0.0
+    size 384
+}
+
+pointlight BFG10K_X3
+{
+    color 0.0 1.0 0.0
+    size 512
+}
+
+pointlight BFG10K_X4
+{
+    color 0.0 1.0 0.0
+    size 160
+}
+
+pointlight BFG10K_X5
+{
+    color 0.0 1.0 0.0
+    size 72
+}
+
+object BFGSHOT
+{
+    frame B10KA { light BFGBALL }
+    frame B10KB { light BFGBALL }
+
+    frame B10KC { light BFG10K_X1 }
+    frame B10KD { light BFG10K_X2 }
+    frame B10KE { light BFG10K_X3 }
+    frame B10KF { light BFG10K_X1 }
+    frame B10KG { light BFG10K_X4 }
+    frame B10KH { light BFG10K_X5 }
+}
+
+object NewSpray
+{
+    frame B2SPA { light BFGBALL    }
+    frame B2SPB { light BFGBALL_X1 }
+    frame B2SPC { light BFGBALL_X4 }
+    frame B2SPD { light BFGBALL_X5 }
+}
+
 pointlight BFGBALL
 {
     color 0.0 1.0 0.0
