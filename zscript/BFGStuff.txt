@@ -193,20 +193,21 @@ CLASS BFGBlaster : Actor
 
 		for (let it = BlockThingsIterator.Create(self, rayrange); it.Next();)
     		{
-			if (it.thing != self &&
+			if (it.thing != null &&
+				it.thing != self &&
 			    it.thing != target &&
 			    it.thing.bShootable && 
 			    CheckSight(it.thing, 0) &&
 			    (it.thing.Distance3D(self) <= double(rayrange)))
 			    {
-				if ((it.thing.CheckClass("DoomPlayer", AAPTR_DEFAULT, TRUE)) || !it.thing.bFriendly) //&& (deathmatch || teamdamage)) 
-				{
-					self.A_Face(it.thing, 0, 0, FAF_MIDDLE);
-					self.A_CustomRailgun(0, 0, "", "00FF00", RGF_SILENT|RGF_FULLBRIGHT|RGF_NOPIERCING, 0, 0, "BulletPuff", 0, 0, 480, 1, 0.1, 1.0, "", 0, 0, 0, 0.0);
-					it.thing.DamageMobj(self, self.target, 5, "BFGLaser");
+				if ((it.thing is "Q2Player" || !it.thing.bFriendly)) //&& (deathmatch || teamdamage)) 
+					{
+						self.A_Face(it.thing, 0, 0, FAF_MIDDLE);
+						self.A_CustomRailgun(0, 0, "", "00FF00", RGF_SILENT|RGF_FULLBRIGHT|RGF_NOPIERCING, 0, 0, "BulletPuff", 0, 0, 480, 1, 0.1, 1.0, "", 0, 0, 0, 0.0);
+						it.thing.DamageMobj(self, self.target, 5, "BFGLaser");
+					}
 				}
 			}
-		}
 	}
 }
 
@@ -249,16 +250,17 @@ CLASS BFGSprayShooter : Actor
 		{
 			for (let it = BlockThingsIterator.Create(self, maxdistance); it.Next();)
     			{
-				if (it.thing != self &&
+				if (it.thing != null &&
+					it.thing != self &&
 				    it.thing != target &&
 				    it.thing.bShootable &&
 				    CheckSight(it.thing, 0) &&
 				    it.thing.IsVisible(self.target, TRUE))
 				    {
 					spraydamage = dam - int(dam * it.thing.Distance3D(self) / double(maxdistance));
-					if (it.thing.CheckClass("DoomPlayer", AAPTR_DEFAULT, TRUE))
+					if (it.thing is "Q2Player")
 						spraydamage = int(spraydamage*0.4);
-					if (it.thing.bFriendly && !it.thing.CheckClass("DoomPlayer", AAPTR_DEFAULT, TRUE))
+					if (it.thing.bFriendly) // && it.thing is "Q2Player")
 						spraydamage = 0;
 					if (spraydamage > 0)
 					{

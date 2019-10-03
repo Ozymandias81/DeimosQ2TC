@@ -1257,7 +1257,7 @@ Actor Q2Makron : Q2SoldierBase
 		JRG3 A 0 A_PlaySound("Makron/Attack2",0)
 		JRG3 ABCDE 3 A_FaceTarget
 		JRG3 F 0 A_PlayWeaponSound("Weapons/BFG10KShot")
-		JRG3 F 4 A_CustomMissile(MakronBFGBall,85,-5)
+		JRG3 F 4 A_CustomMissile(BFGShot,85,-5) //(MakronBFGBall,85,-5)
 		JRG3 GHIJKLM 3 A_FaceTarget
 		Goto See
 	Pain:
@@ -1412,7 +1412,7 @@ Actor Q2Jorg : Q2Makron
 		"----" A 3
 		JRG0 NOP 4 A_FaceTarget
 		JRG0 Q 0 A_PlayWeaponSound("Weapons/BFG10KShot")
-		JRG0 Q 4 A_CustomMissile(MakronBFGBall,55,-23)
+		JRG0 Q 4 A_CustomMissile(BFGShot,55,-23)//(MakronBFGBall,55,-23)
 		JRG0 RSTUV 4
 		Goto See
 	Blaster:
